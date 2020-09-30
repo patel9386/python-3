@@ -1,0 +1,51 @@
+#The difference between tuples and list
+
+import sys
+
+# 1 tuples are immutable unlike lists
+
+#example
+
+print("list")
+
+list = [1,"hello",False]
+
+tuple = (1,"hello",False)
+
+print(list)
+
+list[1] = "love you"
+
+print("after change")
+
+print(list)
+
+print("\n \ntuple")
+
+print(tuple)
+
+try:
+
+ tuple[1] = "love you"
+
+ print(tuple)
+
+ 
+
+except:
+
+ print("tuples are immutable")
+
+ print(tuple)
+
+ print("\n\n")
+
+#2 lists take more memory than tuples
+
+print("the memory differences")
+
+print("list: " + str(sys.getsizeof(list)))
+
+print("tuple: " + str(sys.getsizeof(tuple)))
+
+print("That\'s all i know")
